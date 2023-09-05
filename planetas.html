@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Я T Ƨ A</title>
+  <link rel="icon" href="imagens/icon.png">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+  <link rel="stylesheet" href="./style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Oxanium:wght@300;400;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <header>
+    <nav>
+        <ul class="nav-list">
+            <li><a style="font-size: 35px;" href="index.html#page1">Home</a></li>
+            <li><a style="font-size: 35px;" href="signos.html">Signos</a></li>
+            <li><a style="font-size: 35px;" href="index.html#page3">Curiosidades</a></li>
+            <li><a style="font-size: 35px;" href="index.html#page4">Sistema Solar</a></li>
+            <li><a style="font-size: 35px;" href="index.html#page5">Noticias</a></li>
+            <li><a style="font-size: 35px;" href="index.html#page6">Sobre Nós</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+
+  <input class='planet8' id='neptune' name='planet' type='radio'>
+  <label class='neptune menu' for='neptune'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Netuno
+      </h2>
+      <h3>30.06 AU</h3>
+    </div>
+  </label>
+  <input class='planet7' id='uranus' name='planet' type='radio'>
+  <label class='uranus menu' for='uranus'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Urano
+      </h2>
+      <h3>19.18 AU</h3>
+    </div>
+  </label>
+  <input class='planet6' id='saturn' name='planet' type='radio'>
+  <label class='saturn menu' for='saturn'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Saturno
+      </h2>
+      <h3>9.539 AU</h3>
+    </div>
+  </label>
+  <input class='planet5' id='jupiter' name='planet' type='radio'>
+  <label class='jupiter menu' for='jupiter'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Júpiter
+      </h2>
+      <h3>5.203 AU</h3>
+    </div>
+  </label>
+  <input checked='checked' class='planet4' id='mars' name='planet' type='radio'>
+  <label class='menu mars' for='mars'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Marte
+      </h2>
+      <h3>1.524 AU</h3>
+    </div>
+  </label>
+  <input checked='checked' class='planet3' id='earth' name='planet' type='radio'>
+  <label class='menu earth' for='earth'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Terra
+      </h2>
+      <h3>1 AU</h3>
+    </div>
+  </label>
+  <input checked='checked' class='planet2' id='venus' name='planet' type='radio'>
+  <label class='menu venus' for='venus'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Vênus
+      </h2>
+      <h3>0.723 AU</h3>
+    </div>
+  </label>
+  <input checked='checked' class='planet1' id='mercury' name='planet' type='radio'>
+  <label class='menu mercury' for='mercury'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Mercúrio
+      </h2>
+      <h3>0.39 AU</h3>
+    </div>
+  </label>
+
+
+
+  <div class='solar'>
+    <div class='solar_systm'>
+      <div class='planet mercury'>
+        <div class='planet_description mercury'>
+          <h2>Planeta</h2>
+          <h1>Mercúrio</h1>
+          <p>O planeta mais próximo do sol. Ele circula o sol mais rápido do que todos os outros planetas, e é por isso
+            que os romanos o nomearam em homenagem ao seu deus mensageiro de pés velozes.</p>
+          <label for='readMercury'>
+            <a>
+              Leia Mais
+              <span></span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+
+
+
+    <div class='solar_systm'>
+      <div class='planet venus'>
+        <div class='planet_description venus'>
+          <h2>Planeta</h2>
+          <h1>Vênus</h1>
+          <p>Nomeado para a deusa romana do amor e da beleza. Nos tempos antigos, muitas vezes se pensava que Vênus era
+            duas estrelas diferentes, a estrela vespertina e a estrela matutina.</p>
+          <label for='readVenus'>
+            <a>
+              Leia Mais
+              <span></span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+
+
+
+
+    <div class='solar_systm'>
+      <div class='planet earth'>
+        <div class='moon moon'>
+          <h3>Lua</h3>
+          <h2>Lua</h2>
+        </div>
+        <div class='trajectory m'></div>
+        <div class='planet_description earth'>
+          <h2>Planeta</h2>
+          <h1>Terra</h1>
+          <p>Terra, nossa casa. É o único planeta conhecido por ter uma atmosfera contendo oxigênio livre, oceanos de
+            água líquida em sua superfície e, claro, vida.</p>
+          <label for='readEarth'>
+            <a>
+              Leia Mais
+              <span></span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+
+    <div class='solar_systm'>
+      <div class='planet mars'>
+        <div class='moon deimos'>
+          <h3>Lua</h3>
+          <h2>Deimos</h2>
+        </div>
+        <div class='trajectory d'></div>
+        <div class='moon phoebos'>
+          <h3>Lua</h3>
+          <h2>Fobos</h2>
+        </div>
+        <div class='trajectory p'></div>
+        <div class='planet_description mars'>
+          <h2>Planeta</h2>
+          <h1>Marte</h1>
+          <p>Quarto planeta a partir do Sol e o segundo menor planeta do sistema solar. Nomeado o deus romano da guerra,
+            muitas vezes descrito como o “Planeta Vermelho”.</p>
+          <label for='readMars'>
+            <a>
+              Leia Mais
+              <span></span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+
+    <div class='solar_systm'>
+      <div class='planet jupiter'>
+        <div class='moon lo'>
+          <h3>Lua</h3>
+          <h2>Io</h2>
+        </div>
+        <div class='moon europa'>
+          <h3>Lua</h3>
+          <h2>Europa</h2>
+        </div>
+        <div class='moon ganymede'>
+          <h3>Lua</h3>
+          <h2>Ganímedes</h2>
+        </div>
+        <div class='trajectory lop'></div>
+        <div class='trajectory eu'></div>
+        <div class='trajectory ga'></div>
+        <div class='planet_description jupiter'>
+          <h2>Planeta</h2>
+          <h1>Júpiter</h1>
+          <p>Júpiter é o maior planeta do sistema solar. Apropriadamente, recebeu o nome do rei dos deuses da mitologia
+            romana.</p>
+          <label for='readJupiter'>
+            <a>
+              Leia Mais
+              <span></span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+
+
+    <div class='solar_systm'>
+      <div class='planet saturn'>
+        <div class='moon titan'>
+          <h3>Lua</h3>
+          <h2>Titã</h2>
+        </div>
+        <div class='moon dione'>
+          <h3>Lua</h3>
+          <h2>Dione</h2>
+        </div>
+        <div class='moon enceladus'>
+          <h3>Lua</h3>
+          <h2>Encélado</h2>
+        </div>
+        <div class='trajectory ti'></div>
+        <div class='trajectory di'></div>
+        <div class='trajectory enc'></div>
+        <div class='planet_description saturn'>
+          <h2>Planeta</h2>
+          <h1>Saturno</h1>
+          <p>Saturno é o sexto planeta a partir do sol e o segundo maior planeta do sistema solar. Saturno era o nome
+            romano de Cronos, o senhor dos Titãs.</p>
+          <label for='readSaturn'>
+            <a>
+              Leia mais
+              <span></span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+
+
+
+
+    <div class='solar_systm'>
+      <div class='planet uranus'>
+        <div class='moon miranda'>
+          <h3>Lua</h3>
+          <h2>Miranda</h2>
+        </div>
+        <div class='moon ariel'>
+          <h3>Lua</h3>
+          <h2>Ariel</h2>
+        </div>
+        <div class='moon umbriel'>
+          <h3>Lua</h3>
+          <h2>Umbriel</h2>
+        </div>
+        <div class='trajectory mir'></div>
+        <div class='trajectory ari'></div>
+        <div class='trajectory umb'></div>
+        <div class='planet_description uranus'>
+          <h2>Planeta</h2>
+          <h1>Urano</h1>
+          <p>O primeiro planeta a ser descoberto por cientistas. O planeta é notável por sua inclinação dramática, que
+            faz com que seu eixo aponte quase diretamente para o sol.</p>
+          <label for='readUranus'>
+            <a>
+              Leia Mais
+              <span></span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+
+
+
+    <div class='solar_systm'>
+      <div class='planet neptune'>
+        <div class='moon triton'>
+          <h3>Lua</h3>
+          <h2>Triton</h2>
+        </div>
+        <div class='moon proteus'>
+          <h3>Lua</h3>
+          <h2>Proteus</h2>
+        </div>
+        <div class='moon nereid'>
+          <h3>Lua</h3>
+          <h2>Nereid</h2>
+        </div>
+        <div class='trajectory tri'></div>
+        <div class='trajectory pro'></div>
+        <div class='trajectory ner'></div>
+        <div class='planet_description neptune'>
+          <h2>Planeta</h2>
+          <h1>Netuno</h1>
+          <p>é o oitavo e último planeta do nosso Sistema Solar. O nome do planeta é derivado do deus romano dos
+            oceanos, Netuno, e foi sugerido por um de seus descobridores, Urbain Le Verrier.</p>
+          <label for='readNeptune'>
+            <a>
+              Leia Mais
+              <span></span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+  
+  </div>
+
+
+
+  <input class='read' id='readMercury' name='mercuryRead' type='radio'>
+  <label class='closeBig' for='closeMercury'></label>
+  <input class='read' id='closeMercury' name='mercuryRead' type='radio'>
+  <div class='panel'>
+    <h1>Mercúrio</h1>
+    <p>Mercúrio é o planeta mais próximo do Sol no nosso sistema solar e
+      é também o menor dos planetas </p>
+    <p>Ele é um planeta menor que a lua da terra, sua orbita completa ao redor do sol é em aproximadamente 88 dias. A
+      sua superfície é rochosa e marcada por crateras de impacto, revelando uma história de bombardeios intensos por
+      meteoroides ao longo dos bilhões de anos de existência do planeta. Além das crateras, existem também regiões lisas
+      conhecidas como "mares" ou planícies.</p>
+    <img src='https://i2.wp.com/www.astronomytrek.com/wp-content/uploads/2012/11/mercury-1.jpg?fit=678%2C381&amp;ssl=1'>
+    <h2>Atmosfera</h2>
+    <p>a sua atmosfera é fina e a sua gravidade fraca, com isso não é possivel reter o calor resultando em uma variação
+      de temperatura.
+    </p>
+    <p>mercúrio é o menor planeta do Sistema Solar.</p>
+    <p>DiÂmetro> 4.879,4 km</p>
+    <p>Mercúrio é o segundo planeta mais denso.</p>
+    <p>Cordenadas> Ascensão Reta 11h 23m 10s | Declinação +0° 45′ 40″
+    </p>
+    <p>Clima> 430°C no lado voltado para o Sol durante o dia e caindo
+      para aproximadamente -180°C durante a noite</p>
+    <br>
+  </div>
+
+
+
+
+  <input class='read' id='readVenus' name='venusRead' type='radio'>
+  <label class='closeBig' for='closeVenus'></label>
+  <input class='read' id='closeVenus' name='venusRead' type='radio'>
+  <div class='panel'>
+    <h1>Vênus</h1>
+    <p>Vênus é o segundo planeta a partir do Sol no nosso sistema solar e é frequentemente chamado de "gêmeo da Terra"
+      devido ao tamanho e composição similares.. No entanto, as semelhanças param por aí, já que Vênus possui um clima
+      extremamente hostil.</p>
+    <p>As nuvens de Vênus são feitas de ácido sulfúrico, criando um ambiente corrosivo e tóxico. A pressão atmosférica
+      na superfície é opressiva, equivalente a estar a quase 900 metros debaixo d'água na Terra</p>
+    <img src='https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2014/2-whatistheave.jpg' alt>
+    <p>a rotação é retrógrado, ou seja, gira na direção oposta à maioria dos planetas, e seus dias são mais longos que
+      seus anos., 225 dias, aproximadamente</p>
+    <p>Diâmetro> 12.104 km </p>
+    <p>Cordenadas> Ascensão Reta 9h 27m 19s | Declinação +6° 26′ 33″.</p>
+    <p>Clima> A superfície tem níveis incrivelmente altos, chegando a cerca de 470°C</p>
+    <br>
+  </div>
+
+
+
+
+
+
+  <input class='read' id='readEarth' name='earthRead' type='radio'>
+  <label class='closeBig' for='closeEarth'></label>
+  <input class='read' id='closeEarth' name='earthRead' type='radio'>
+  <div class='panel'>
+    <h1>Terra</h1>
+    <p>A Terra é o terceiro planeta a partir do Sol e é o único lugar conhecido no universo onde a vida prospera possui
+      uma mistura única de água líquida, atmosfera rica em oxigênio e uma diversidade incrível de formas de vida.. ela
+      demora em torno de 365 dias para dar uma volta no sol.</p>
+    <img src='https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350'>
+    <p>A atividade geológica, como o movimento das placas tectônicas, moldou a superfície da Terra, criando montanhas,
+      vales, oceanos e continentes ao longo de milhões de anos. A biodiversidade é uma característica notável do nosso
+      planeta, com uma enorme variedade de espécies de plantas, animais e microrganismos que ocupam diferentes nichos
+      ecológicos.</p>
+    <p>A Lua é o único satélite natural da Terra. Está a 384.400 km do planeta, e a cada ano se afasta 3,78 centímetros.
+      Apresenta uma exosfera fina e frágil, e sua estrutura é composta por crosta, manto e núcleo. Sua superfície está
+      repleta de crateras de impacto, fragmentos de rocha e poeira.</p>
+    <p>12.742 km Diâmetro </p>
+    <br>
+  </div>
+
+
+
+
+
+
+  <input class='read' id='readMars' name='marsRead' type='radio'>
+  <label class='closeBig' for='closeMars'></label>
+  <input class='read' id='closeMars' name='marsRead' type='radio'>
+  <div class='panel'>
+    <h1>Marte</h1>
+    <p> Marte, frequentemente chamado de "Planeta Vermelho", é o quarto planeta a partir do Sol no nosso sistema solar.
+      É um mundo fascinante e muitas vezes comparado à Terra, embora com condições muito diferentes.</p>
+    <img
+      src='https://1.bp.blogspot.com/-ou7Je3OVg6U/WYtxDqjNp_I/AAAAAAAACSQ/fsopS5VtFg4bmlv8hQNfiRYfJqTygCotQCLcBGAs/s2048/Martian%2Blandscape%2Bby%2BAmante%2BLombardi.jpg'>
+    <p>É um planeta rochoso com uma atmosfera muito mais fina do que a da Terra. Uma das características mais marcantes
+      de Marte é a presença de vulcões gigantes, como o Monte Olimpo, que é o vulcão mais alto conhecido em todo o
+      sistema solar. Além disso, Marte tem uma das maiores ravinas, Valles Marineris, e um solo rico em óxido de ferro.
+    </p>
+    <p>Embora a superfície de Marte seja marcada por crateras de impacto semelhantes às da Lua, também existem
+      evidências de rios antigos, lagos e vales ele completa uma volta ao redor do Sol a cada 687 dias, aproximadamente
+    </p>
+    <p>diãmetro> 6.779 km </p>
+    <p>coordenadas> Ascensão Reta 11h 39m 57s | Declinação +2° 59′ 57″</p>
+    <p>clima> As temperaturas em Marte são geralmente muito frias, chegando a cerca de -80°C em média.</p>
+    <br>
+  </div>
+
+
+
+
+
+  <input class='read' id='readJupiter' name='jupiterRead' type='radio'>
+  <label class='closeBig' for='closeJupiter'></label>
+  <input class='read' id='closeJupiter' name='jupiterRead' type='radio'>
+  <div class='panel'>
+    <h1>Júpiter</h1>
+    <p>Júpiter é o maior planeta do nosso sistema solar e é conhecido como um gigante gasoso devido à sua composição
+      predominantemente gasosa. Ele é o quinto planeta a partir do Sol</p>
+    <p>Com uma massa aproximadamente 318 vezes maior do que a da Terra, Júpiter não possui uma superfície sólida
+      definida. Em vez disso, é composto principalmente de hidrogênio e hélio em estado gasoso, com uma atmosfera densa
+      que exibe padrões distintos de nuvens e faixas coloridas. A Grande Mancha Vermelha, uma tempestade gigante que
+      existe há séculos, é uma das características mais marcantes de Júpiter.</p>
+    <p>A sonda Juno, da NASA, está estudando Júpiter de perto desde 2016, revelando informações sobre sua estrutura
+      interna, atmosfera e campo magnético. ele é o maior planeta do nosso sistema solar, leva cerca de 11,86 anos
+      terrestres para completar uma órbita ao redor do Sol. Isso equivale a aproximadamente 4.332 dias terrestres.
+      Portanto, Júpiter leva cerca de 4.332 dias para dar a volta completa no Sol.</p>
+    <p>diÂmetro> 139.820 km</p>
+    <p>Coordenadas>Ascensão Reta 2h 50m 39s | Declinação +15° 1′ 57″</p>
+    <br>
+  </div>
+
+
+
+
+
+
+  <input class='read' id='readSaturn' name='saturnRead' type='radio'>
+  <label class='closeBig' for='closeSaturn'></label>
+  <input class='read' id='closeSaturn' name='saturnRead' type='radio'>
+  <div class='panel'>
+    <h1>Saturno</h1>
+    <p>Saturno, conhecido por seus impressionantes anéis, é o sexto planeta a partir do Sol no nosso sistema solar. É
+      notável por seus anéis deslumbrantes, compostos principalmente de partículas de gelo e rocha que variam em
+      tamanho, desde grãos de poeira até pedaços maiores.</p>
+    <p>Ele tem um sistema de luas impressionante, com mais de 80 luas confirmadas e muitas outras sendo investigadas. A
+      maior lua de Saturno, Titã, é notável por ter uma atmosfera densa e uma superfície que inclui lagos e rios de
+      hidrocarbonetos líquidos, tornando-a um objeto de interesse para futuras missões de exploração.</p>
+    <img src='http://ak0.picdn.net/shutterstock/videos/4049260/thumb/1.jpg'>
+    <p>Saturno também possui um sistema de auroras brilhantes em seus polos, causadas pela interação entre seu campo
+      magnético e as partículas carregadas do vento solar.</p>
+    <p>leva cerca de 29,46 anos terrestres para completar uma órbita completa ao redor do Sol. Isso equivale a
+      aproximadamente 10.759 dia</p>
+    <p>diÂmetro> 116.460 km</p>
+    <p>Coordenadas> Ascensão Reta 22h 23m 44s | Declinação -11° 53′ 58″.</p>
+    <br>
+  </div>
+
+
+
+
+
+
+
+
+  <input class='read' id='readUranus' name='uranusRead' type='radio'>
+  <label class='closeBig' for='closeUranus'></label>
+  <input class='read' id='closeUranus' name='uranusRead' type='radio'>
+  <div class='panel'>
+    <h1>Urano</h1>
+    <p>Urano, o sétimo planeta a partir do Sol, é um mundo misterioso e único no nosso sistema solar. Diferente da
+      maioria dos outros planetas, ele possui um eixo de rotação inclinado em quase 90 graus, fazendo com que ele "role"
+      de lado em sua órbita.</p>
+    <p>Uma característica intrigante de Urano é sua falta de características de superfície distintas. Isso ocorre porque
+      sua atmosfera densa e nebulosa esconde a maior parte da sua estrutura interna e superfície.. Um dos aspectos mais
+      interessantes de Urano é o seu sistema de anéis. Embora sejam menos proeminentes do que os de Saturno, esses anéis
+      são compostos por partículas escuras de rocha e gelo. As luas de Urano também são peculiares, algumas delas têm
+      órbitas retrógradas (em direção oposta à rotação do planeta) e outras mostram características únicas de
+      superfície.</p>
+    <img src='http://www.cosmosup.com/wp-content/uploads/2016/02/Uranus-Facts-About-the-Planet-Uranus-700x325.jpg'>
+    <p>leva cerca de 84 anos terrestres para completar uma órbita ao redor do Sol. Isso equivale a aproximadamente
+      30.660 dias terrestres.</p>
+    <p>Coordenadas> Ascensão Reta 3h 22m 40s | Declinação +18° 12′ 38</p>
+    <p>DiÂmetro> 50.724 km</p>
+    <br>
+  </div>
+
+
+
+
+
+  <input class='read' id='readNeptune' name='neptuneRead' type='radio'>
+  <label class='closeBig' for='closeNeptune'></label>
+  <input class='read' id='closeNeptune' name='neptuneRead' type='radio'>
+  <div class='panel'>
+    <h1>Netuno</h1>
+    <p>Netuno, o oitavo e último planeta a partir do Sol, é um mundo fascinante e enigmático no nosso sistema solar. O
+      planeta é caracterizado por ventos fortes e constantes, que podem atingir velocidades de até 2.000 km/h,
+      tornando-o um dos lugares mais ventosos do sistema solar.</p>
+    <p>Netuno tem um sistema de anéis, embora sejam tênues e compostos principalmente por partículas de gelo. Além
+      disso, o planeta possui uma coleção de pelo menos 14 luas conhecidas, sendo Tritão a maior delas. Tritão é notável
+      por ser uma das poucas luas no sistema solar que tem uma órbita retrógrada, ou seja, orbita o planeta na direção
+      oposta à rotação de Netuno.</p>
+    
+    <p>leva cerca de 164,8 anos terrestres para completar uma órbita ao redor do Sol. Isso equivale a aproximadamente
+      60.190 dias terrestres. Portanto, Netuno leva cerca de 60.190 dias para dar a volta completa no Sol.</p>
+    <p>IDiâmetro> 49.244 km.</p>
+    <p>coordenadas>Ascensão Reta 23h 49m 54s | Declinação -2° 28′ 27″</p>
+  </div>
+  <input class='read' id='readPluto' name='plutoRead' type='radio'>
+  <label class='closeBig' for='closePluto'></label>
+  <input class='read' id='closePluto' name='plutoRead' type='radio'>
+  
+  <!-- partial -->
+
+</body>
+
+</html>

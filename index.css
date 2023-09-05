@@ -1,0 +1,550 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Estrutura do cabeçalho */
+body{
+    color: #FFF;
+    font-family: Karantina;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: normal;
+}
+
+header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* Estilização da tag de hyperlink */
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 35px;
+}
+
+/* Animação da nav list */
+a:hover {
+    opacity: 0.3;
+}
+
+/* Estrutura da nav list */
+nav {
+    top: 1px;
+    display: flex;
+    align-items: center;
+    background: #00000000;
+    height: 8vh;
+    position: absolute;
+    width: 100vh;
+    z-index: 100;
+    margin-left: -75vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    position: fixed;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 5vh;
+    font-family: Advent Pro;
+}
+li a{
+    font-size: 20px;
+}
+
+/* Formatação do Logo */
+#astroimg {
+    height: 10vh;
+    width: 50vh;
+    margin-left: 40vh;
+}
+
+.nome{
+    display: inline-flex;
+    margin-top: 25vh;
+    margin-left: -45vh;
+    
+}
+.nome .estatico{
+    font-size: 40px;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    font-family: Advent Pro;
+}
+.nome .dinamico{
+    margin-left: 15px;
+    line-height: 50px;
+    height: 45px;
+    width: 250px;
+    overflow: hidden;
+    font-family: Advent Pro;
+}
+.dinamico li{
+    list-style: none;
+    font-size: 40px;
+    font-weight: 500;
+    left: 0;
+    margin-bottom: 1px;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+@keyframes slide{
+    100%{
+        top: -210px;
+    }
+}
+.dinamico li span::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-left: 2px solid white;
+    animation: typing 1.5s steps(10) infinite;
+    background-color: black;
+}
+.dinamico li span{
+    position: relative;
+
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+main {
+    margin-left: 20%;
+    height: 300px;
+    width: 400px;
+    text-align: justify;
+    font-size: larger;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: system-ui;
+}
+
+
+p {
+    font-family: advent pro;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+/* Estilização página inicial */
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 2s;
+    transform: translateX(-100%);
+    overflow: hidden;
+    
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transition: all 3s;
+    transform: translateX(0);
+}
+
+
+#eclip{
+    margin-left: 75vh;
+    width: 88vh;
+    height: 88vh;
+    flex-shrink: 0; 
+    border-radius: 970px;
+    background: #D9D9D9;
+    overflow: hidden;
+    
+}
+#eclipse{
+    margin-top: -30vh;
+    margin-left: -20vh;
+    width: 123vh;
+    height: 150vh;
+    flex-shrink: 0; 
+    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+
+
+/* Estilização da página dos signos */
+.circastro{
+    width: 800px;
+    height: 680px;
+}
+
+#circastro{
+    float: left;
+    margin-left: -400px;
+}
+#page2{
+    margin-top: 10vh;
+}
+#contendpag2{
+    
+    height: auto;
+    width: 90%;
+    margin: auto;
+    margin-top: 10vh;
+}
+#page2 h1 {
+    font-size: 50px;
+    font-family: Advent Pro;
+    float: left;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.paragrafo {
+    width: 50%;
+    height: 100px;
+    font-size: 30px;
+    text-align: justify;
+    float: left;
+    font-family: Advent Pro;
+    padding-top: 50px;
+    margin-left: 50px;
+    font-weight: normal;
+}
+
+#btn {
+    width: 120px;
+    height: 50px;
+    background-color: #53535362;
+    border-radius: 20px;
+    clear: left;
+    font-family: Advent Pro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    letter-spacing: 3px;
+    margin-left: 150vh;
+    margin-top: -100vh;
+}
+
+/* Estilização da página sobre curiosidades */
+#fundocuriosidades{
+    margin-left: 10vh;
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+#curastronomicas {
+    height: 40vh;
+    width: 95vh;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: -20vh;
+    margin-top: -25vh;
+}
+#curastrologicas {
+    margin-top: 60vh;
+    margin-left: -20vh;
+    height: 40vh;
+    width: 95vh;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#fundocuriosidades a{
+    height: 40px;
+    width: 50px;
+}
+#fundocuriosidades img{
+    height: 200px;
+    width: 300px;
+}
+#fundocuriosidades h1{
+    margin-top: -75vh;
+    margin-left: 35vh;
+}
+#page3{
+    margin-top: 15vh;
+}
+#page3 h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+#page3 h2{
+    color: #ffffff;
+    padding-left: 30px;
+}
+
+#astronomicas{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    padding-top: 100px;
+    font-family: system-ui;
+}
+
+#caixa1{
+    background-image: url(imagens/nos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#caixa1, #caixa2, #caixa3, #caixa4, #caixa5, #caixa6, #caixa7, #caixa8{
+    width: 250px;
+    height: 150px;
+    background-color: #ccc;
+    float: left;
+    margin: 30px;
+}
+
+#caixa5{
+    background-image: url(imagens/nos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estilização da página dos planetas */
+
+.paragrafo4 {
+    width: 50%;
+    height: 150px;
+    font-size: 30px;
+    text-align: justify;
+    font-family: Advent Pro;
+    margin-left: 15vh;
+    margin-top: -40vh;
+    font-weight: normal;
+}
+
+#btn4 {
+    width: 230px;
+    height: 50px;
+    background-color: #53535362;
+    border-radius: 20px;
+    clear: left;
+    font-family: Advent Pro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    letter-spacing: 3px;
+    margin-left: 5vh;
+    margin-top: 40vh;
+}
+
+#page4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+#page4 h1{
+    position:absolute;
+    font-size: 50px;
+    z-index: 3;
+    padding-bottom: 500px;
+    margin-top: -10vh;
+}
+
+#jup{
+    width: 35vh;
+    height: 90%;
+    margin-left: -20vh;
+}
+
+/* Estilização da página sobre noticias */
+#page5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.wrapper{
+    max-width: 122vh;
+    width: 100%;
+    position: relative;
+}
+
+.wrapper i{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px white;
+}
+.wrapper i:first-child{
+    left: -10vh;
+}
+.wrapper i:last-child{
+    right: -10vh;
+}
+.wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3 ) -12px);
+    gap: 16px;
+    overflow-x: auto ;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+.carousel .card {
+    scroll-snap-align: start;
+    list-style: none;
+    background: #0000002f;
+    border-radius: 8px;
+    width: 400px;
+    height: 40vh;
+}
+.carousel .dragging .card{
+    cursor: grab;
+    user-select: none;
+}
+.card .img-card img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+.img-card img{
+    border-radius: 30px;
+}
+
+.wrapper h2{
+    font-size: 30px;
+    font-family: advent pro;
+    text-align: justify;
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+#page5 h1{
+    position: absolute;
+    z-index: 3;
+    margin-top: -70vh;
+    margin-left: -4vh;
+}
+/* Estilização da página sobre a equipe */
+.page6 {
+    background-image: url(imagens/nos6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Estrutura da interface */
+.interface {
+    background-image: url(imagens/fundo_star2.jpg);
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+}
+
+#nossotexto{
+    margin-top: 50px;
+    font-size: 30px;
+    margin-left: 60%;
+    text-align: left;
+    height: auto;
+    width: auto;
+}
+
+#nossotexto p {
+    margin-top: 10px;
+    font-family: Advent Pro;
+    font-weight: normal;
+}
+
+
+@media screen and (max-width=768px) {
+    #interface {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section{
+        width: 100%;
+        min-height: 200vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        place-items: center;
+        justify-content: center;
+    }
+    header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #nossotexto{
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+        
+    }
+}

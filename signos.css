@@ -1,0 +1,211 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-position-x: left;
+}
+
+header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* Estilização da tag de hyperlink */
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+/* Animação da nav list */
+a:hover {
+    opacity: 0.3;
+}
+
+/* Estrutura da nav list */
+nav {
+    top: 1px;
+    display: flex;
+    align-items: center;
+    background: #00000000;
+    height: 8vh;
+    position: absolute;
+    width: 100vh;
+    z-index: 100;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    position: fixed;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 2.5vh;
+    font-family: Advent Pro;
+}
+li a{
+    font-size: 20px;
+}
+
+#imgfundo{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 1;
+}
+
+.interface{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tamanho{
+    width: 80vh;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+#identcapricornio, #identaquario, #identpeixes, #identaries, #identtouro, #identgemeos, #identcancer, #identleao, #identvirgem, #identlibra, #identescorpion, #identsagitario {
+    width: 10vh;
+    height: 10vh;
+    float: left;
+}
+#tamanho a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    float: left;
+    padding: 30px;
+    font-family: advent pro;
+}
+
+#tamanho div{
+    width: 15vh;
+    height: 10vh;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+p{
+    color: #fff;
+    font-family: advent pro;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: justify;
+    margin-top: 13vh;
+}
+
+.signo{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.capricornio{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.simbcapri, .simpeix, .simbtou, .simbcanc, .simbvirgem, .simbesco{
+    width: 11vh;
+    padding-left: 3vh;
+    padding-bottom: 72vh;
+}
+
+.simbaqua, .simbari, .simbgem, .simbleao, .simblib, .simbsagita{
+    width: 11vh;
+    padding-right: 3vh;
+    padding-bottom: 72vh;
+}
+
+#text p{
+    color: #fff;
+    font-size: 30px;
+    text-align: justify;
+    padding-right: 50px;
+}
+
+.aquario{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.peixes{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.aries{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.touro{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.gemeos{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.cancer{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.leao{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.virgem{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.libra{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.escorpiao{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.sagitario{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
